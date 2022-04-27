@@ -632,7 +632,7 @@ The product of the numbers should be the same, when both the numbers are reverse
 
 If products were same,then print "Yes" else print "No". Note: Assume both the inputs are 2-Digit values.
 
-Hint: [13*62=31*26]
+Hint: ['13*62'='31*26']
 
 Sample Input:
 
