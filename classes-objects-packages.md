@@ -1,4 +1,4 @@
-## Call Details
+## 1. Call Details
 For the postpaid customers, the airvoice mobile shop maintains the calls made by the customer in the file in the given format below:
 
 Callid:callednumber:noofminutes
@@ -9,7 +9,7 @@ The shop wants to extract the information from the file and populate them in to 
 
 Consider the class given below:
 
-![CallClass](CallClass.png)
+![CallClass](images/CallClass.png)
 
                 
 
@@ -39,6 +39,7 @@ Enter the call details:
   
 Source Code:
 ```java
+// Filename: Call.java
 public class Call {
   private int callId;
   private long calledNumber;
@@ -63,6 +64,27 @@ public class Call {
   
   public float getDuration() {
     return this.duration;
+  }
+}
+
+// Filename: Main.java
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String args[]) {
+    String input;
+    Scanner scn = new Scanner(System.in);
+
+    System.out.println("Enter the call details:");
+    input = scn.nextLine();
+
+    Call call = new Call();
+
+    call.parseData(input);
+
+    System.out.println("Call id:" + call.getCallId());
+    System.out.println("Called number:" + call.getCalledNumber());
+    System.out.println("Duration:" + call.getDuration());
   }
 }
 ```
