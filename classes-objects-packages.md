@@ -36,3 +36,33 @@ Enter the call details:
   Called number:6547891230
 
   Duration:2.15
+  
+Source Code:
+```java
+public class Call {
+  private int callId;
+  private long calledNumber;
+  private float duration:
+  
+  public Call() {}
+  
+  public void parseData(String str) {
+    String arr[] = str.split(":");
+    this.callId = Integer.parseInt(arr[0]);
+    this.calledNumber = Long.parseLong(arr[1]);
+    this.duration = Float.parseFloat(arr[2]);
+  }
+  
+  public int getCallId() {
+    return this.callId;
+  }
+  
+  public long getCalledNumber() {
+    return this.calledNumber;
+  }
+  
+  public float getDuration() {
+    return this.duration;
+  }
+}
+```
