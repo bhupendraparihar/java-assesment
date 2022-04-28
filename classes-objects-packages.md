@@ -9,6 +9,8 @@ The shop wants to extract the information from the file and populate them in to 
 
 Consider the class given below:
 
+![CallClass](CallClass.png)
+
                 
 
 In the Call class include the given attributes and methods with the access specifiers as specified in the class diagram.
